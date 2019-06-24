@@ -1,0 +1,15 @@
+<div *ngFor="let row of _values; index as i">
+	<app-square *ngFor="let col of row; index as j" [row]="i"
+	[column]="j" >
+	</app-square>
+</div>
+<div>
+	<h2>
+       Number of Movements: {{_clicks}}
+    </h2>
+ <p>
+   <button 
+     (click)="_Reset()"> Reset</button>
+  </p>  
+</div>
+
